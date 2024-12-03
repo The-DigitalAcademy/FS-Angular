@@ -1,0 +1,41 @@
+$background-image: url('../../../assets/contact.jpg');
+
+.CallMeBack{
+    background-image: $background-image;
+  background-size: cover;
+  height: 75vh;
+//   margin-left: -5rem;
+}
+
+.fill-in input{
+    width: 25rem;
+    border-radius: 0px;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.h1, h1 {
+    font-size: 5rem;
+    padding-top: 10rem;
+    font-weight: lighter;
+}
+
+.h3, h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+
+// .form-check input{
+//     width: 2rem;
+//     margin-right: 1rem;
+// }
+
+// .form-check{
+//    display: flex;
+// }
+
+
+

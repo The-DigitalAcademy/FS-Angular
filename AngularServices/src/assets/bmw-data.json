@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+     
+      "brand": "BMW",
+      "model": "1 Series",
+      "year": 2023,
+      "image": "/1 Series.png"
+    },
+    {
+      "id": 2,
+      "brand": "BMW",
+      "model": "2 Series",
+      "year": 2023,
+      "image": "/2 Series.png"
+    },
+    {
+      "id": 3,
+      "brand": "BMW",
+      "model": "2 Series",
+      "year": 2023,
+      "image": "/3 Series.png"
+    },
+    {
+      "id": 4,
+      "brand": "BMW",
+      "model": "4 Series",
+      "year": 2023,
+      "image": "/4 Series.png"
+    },
+    {
+      "id": 5,
+      "brand": "BMW",
+      "model": "5 Series",
+      "year": 2023,
+      "image": "/5 Series.png"
+    },
+    {
+      "id": 6,
+      "brand": "BMW",
+      "model": "7 Series",
+      "year": 2023,
+      "image": "/7 Series.png"
+    },
+    {
+      "id": 7,
+      "brand": "BMW",
+      "model": "8 Series",
+      "year": 2023,
+      "image": "/8 Series.png"
+    },
+    {
+      "id": 8,
+      "brand": "BMW",
+      "model": "X Models",
+      "year": 2023,
+      "image": "/X Models.png"
+    },
+    {
+      "id": 9,
+      "brand": "BMW",
+      "model": "Z4 Series",
+      "year": 2023,
+      "image": "/Z4 Series.png"
+    },
+    {
+      "id": 10,
+      "brand": "BMW",
+      "model": "M Models",
+      "year": 2023,
+      "image": "/M Models.png"
+    },
+    {
+      "id": 11,
+      "brand": "BMW",
+      "model": "i Models",
+      "year": 2023,
+      "image": "/i Models.png"
+    }
+
+  ]

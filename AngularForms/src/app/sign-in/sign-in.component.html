@@ -1,0 +1,59 @@
+<!-- Form without any form group -->
+<!-- <div>
+  <h1>Hi Welcome Back</h1>
+   <h3>Login Here</h3>
+    <form>
+      <div>
+        <label for="email">Email</label>
+        <input  required  type="text">
+        <label for="password">Password</label>
+        <input  type="password">
+      </div>
+      <button>Submit</button>
+      <span>Don't have an account?
+      <a routerLink="/sign-up">signUp</a></span>
+    </form>
+</div> -->
+
+<!-- Reactive form without validations-->
+<!-- <div>
+  <h1>Hi Welcome Back</h1>
+   <h3>Login Here</h3>
+    <form  [formGroup]="loginForm" (ngSubmit)="login()">
+      <div>
+        <label for="email">Email</label>
+        <input formControlName="email"  required  type="email">
+        <label for="password">Password</label>
+        <input formControlName="password"  type="password">
+      </div>
+      <button>Submit</button>
+      <span>Don't have an account?
+      <a routerLink="/sign-up">signUp</a></span>
+    </form>
+</div> -->
+
+
+<!-- To be validated reactive form -->
+<div class="wrapper">
+  <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/600px-BMW_logo_%28gray%29.svg.png" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+      LOGIN HERE
+  </div>
+  <form class="p-3 mt-3" [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-field d-flex align-items-center">
+          <span class="far fa-user"></span>
+          <input type="text" formControlName="email" id="userName" placeholder="Username">
+      </div>
+      <div class="form-field d-flex align-items-center">
+          <span class="fas fa-key"></span>
+          <input type="password" formControlName="password" id="pwd" placeholder="Password">
+      </div>
+      <button class="btn mt-3">LOGIN</button>
+  </form>
+  <div class="text-center fs-6">
+    <span>Don't have an account? or <a routerLink="/sign-up">REGISTER</a>
+    </span>
+  </div>
+</div>

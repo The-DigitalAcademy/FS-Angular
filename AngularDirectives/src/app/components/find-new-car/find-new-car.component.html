@@ -1,0 +1,62 @@
+
+<div class="contain">
+   
+  <div class="CallMeBack">
+      <app-navbar style="background-color: transparent;"></app-navbar>
+      <div class="container" >
+          <div class="moveText">
+              <h1>DREAM BIG.</h1>
+              <h1> BUY ONLINE.</h1>  
+             <h3>BROWSE STOCK AND PURCHASE YOUR PERFECT BMW.</h3> 
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container" id="view">
+<div class="car-filter">
+  <div class="card" style="width: 23rem; height: 18rem;">
+      <div class="card-body">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  BMW Select Finance
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+</div>
+
+<!-- Added Directives -->
+<div class="view-cars" >
+<div *ngFor="let car of carData" [appCarHighlight]="car.highlight" (click)="toggleHighlight(car)">
+
+  <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col">
+          <img [src]="'assets/' + car.image" alt="{{ car.brand }} {{ car.model }}">
+          <h4>{{ car.brand }} {{ car.model }}</h4>
+          <p>Year: {{ car.year }}</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- <div *ngFor="let car of carData" [appCarHighlight]="car.highlight" (click)="toggleHighlight(car)">
+    <div class="car-item">
+      <img [src]="'assets/' + car.image" alt="{{ car.brand }} {{ car.model }}">
+      <h3>{{ car.brand }} {{ car.model }}</h3>
+      <p>Year: {{ car.year }}</p>
+    </div>
+  </div> -->

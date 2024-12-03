@@ -1,0 +1,134 @@
+$background-image: url('../assets/landing.png');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: -1rem;
+}
+
+.navbar,
+.nav-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $background-image;
+  background-size: cover;
+  margin-left: -5rem;
+  
+  /* Add shared background styling here */
+}
+
+.navbar {
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 5rem;
+    height: 5rem;
+
+    .left-links,
+    .right-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s;
+        font-weight: bold;
+        font-size: larger;
+
+        &:hover {
+        //  background-color: rgba(47, 141, 223, 0.774);
+          border-bottom: solid 5px;
+          border-color:  rgba(47, 141, 223, 0.774);;
+          border-radius: 0px;
+        }
+
+        &.active {
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+  }
+}
+
+.content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $background-image;
+  background-size: cover;
+  flex-grow: 1;
+//   margin-bottom: -20rem;
+  /* Add content styling here */
+}
+
+.white-background {
+  background-color: white;
+  padding: 20px;
+  /* Add white background styling here */
+}
+
+.content-text {
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: white;
+  font-weight: lighter;
+  font-size: larger;
+  padding-left: 3rem;
+
+}
+
+.shoping-tools-img {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+.shoping-tools-text {
+  text-align: center;
+}
+
+.shoping-tools-img img {
+  width: 8rem;
+}
+
+.content-text-more{
+    color: white;
+    padding-left: 5rem;
+    // position: relative;
+    // top: 15rem;
+    margin-top: 15rem;
+
+}
+
+.content-buttons{
+    // position: relative;
+    // top: 18rem;
+    margin-left: 5rem;
+    margin-bottom: 4rem;
+}
+
+.content-buttons input{
+    width: 18rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    background-color: rgb(28, 105, 212);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-right: 1.5rem;
+    cursor: pointer;
+
+}
+
+.shoping-tools-img input{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1rem;
+    cursor: pointer;
+}

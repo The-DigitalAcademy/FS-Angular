@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+     
+      "brand": "BMW",
+      "model": "1 Series",
+      "year": 2023,
+      "image": "/1 Series.png"
+    },
+    {
+      "id": 2,
+      "brand": "BMW",
+      "model": "2 Series",
+      "year": 2023,
+      "image": "/2 Series.png"
+    },
+    {
+      "id": 3,
+      "brand": "BMW",
+      "model": "4 Series",
+      "year": 2023,
+      "image": "/4 Series.png"
+    }
+
+  ]

@@ -1,0 +1,58 @@
+<!-- Form without any form group -->
+<!-- <div>
+  <h1>Hello Welcome </h1>
+    <h3>Create An Account</h3>
+     <form>
+       <div>
+         <label for="email">Email</label>
+         <input  required  type="text">
+         <label for="password">Password</label>
+         <input  type="password">
+       </div>
+       <button>Submit</button>
+       <span>Already have an account?
+       <a routerLink="/sign-in">signUp</a></span>
+     </form>
+ </div> -->
+
+<!-- Reactive form without validations -->
+ <!-- <div>
+  <h1>Hello Welcome </h1>
+   <h3>Create An Account</h3>
+     <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+       <div>
+         <label for="email">Email</label>
+         <input formControlName="email"  type="email"  required>
+         <label for="password">Password</label>
+         <input formControlName="password"  type="password">
+       </div>
+       <button>Submit</button>
+       <span>Already have an account?
+       <a routerLink="/sign-in">signIn</a></span>
+     </form>
+ </div> -->
+
+<!-- To be Validated reactive form -->
+ <div class="wrapper">
+  <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/600px-BMW_logo_%28gray%29.svg.png" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+    REGISTER HERE
+  </div>
+  <form class="p-3 mt-3" [formGroup]="signUpForm" (ngSubmit)="signUp()">
+      <div class="form-field d-flex align-items-center">
+          <span class="far fa-user"></span>
+          <input type="text" formControlName="email" id="userName" placeholder="Username">
+      </div>
+      <div class="form-field d-flex align-items-center">
+          <span class="fas fa-key"></span>
+          <input type="password" formControlName="password" id="pwd" placeholder="Password">
+      </div>
+      <button class="btn mt-3">REGISTER</button>
+  </form>
+  <div class="text-center fs-6">
+    <span>Already have an account? <a routerLink="/sign-in">LOGIN</a>
+    </span>
+  </div>
+</div>
